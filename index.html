@@ -7,26 +7,28 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Web Cam</title>
 </head>
+
 <body>
-<video></video>
+<div id="container">
+    <video autoplay="true" id="videoElement">
+
+    </video>
+</div>
 <script>
+    var video = document.querySelector("#videoElement");
 
+    navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia || navigator.oGetUserMedia;
 
-    if (navigator.getUserData){
-        navigator.getUserData({audio: true, video: {width: 1280, height: 720}},
-            function (stream) {
-                var video = document.querySelector('video');
-                video.srcObject = stream;
-                video.onloadedmetadata = function(e) {
-                    video.play();
-                };
-            },
-                function(err){
-                    console.log("The following error occurred: " + err.name);
-                }
-        );
-    }else{
-        alert('getUserMedia() is not supported in your browser');
+    if (navigator.getUserMedia) {
+        navigator.getUserMedia({video: true}, handleVideo, videoError);
+    }
+
+    function handleVideo(stream) {
+        video.src = window.URL.createObjectURL(stream);
+    }
+
+    function videoError(e) {
+        // do something
     }
 </script>
 </body>
