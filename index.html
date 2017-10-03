@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -17,18 +17,25 @@
 <script>
     var video = document.querySelector("#videoElement");
 
+    //Get the getUserMedia if it exists for this browser!
     navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia || navigator.oGetUserMedia;
 
+    //If it dose exist then
     if (navigator.getUserMedia) {
+        //getUserMedia prompt for permission and call handleVideo else there is an error or the user denied permission.
         navigator.getUserMedia({video: true}, handleVideo, videoError);
     }
 
     function handleVideo(stream) {
+        //set the source of the video and video should auto play as set in the video tag attributes 
         video.src = window.URL.createObjectURL(stream);
     }
 
     function videoError(e) {
-        // do something
+        //alert error
+        alert("Error: " + e);
+        //& console log error
+        console.log("Error: " + e);
     }
 </script>
 </body>
