@@ -12,11 +12,8 @@
 <script>
 
 
-    navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia ||
-            navigator.mozGetUserMedia || navigator.msGetUserMedia;
-
-    if (navigator.GetUserMedia()){
-        navigator.getUserMedia({audio: true, video: {width: 1280, height: 720}},
+    if (navigator.getUserData){
+        navigator.getUserData({audio: true, video: {width: 1280, height: 720}},
             function (stream) {
                 var video = document.querySelector('video');
                 video.srcObject = stream;
