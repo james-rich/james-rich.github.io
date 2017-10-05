@@ -10,15 +10,15 @@
 
 <body>
 <div id="container">
-    <video autoplay="true" class="videoElement">
+    <video autoplay="true" id="videoElement">
 
     </video>
-    <video autoplay="true" class="videoElement">
+    <video autoplay="true" id="videoElement1">
 
     </video>
 </div>
 <script>
-    var video = document.querySelector(".videoElement");
+    var video = document.querySelector("#videoElement, #videoElement1");
 
     //Get the getUserMedia if it exists for this browser!
     navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia || navigator.oGetUserMedia;
