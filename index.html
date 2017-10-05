@@ -10,12 +10,13 @@
     <video autoplay="true" id="videoElement">
 
     </video>
-    <video autoplay="true" id="videoElement">
+    <video1 autoplay="true" id="videoElement1">
 
     </video>
 </div>
 <script>
     var video = document.querySelector("#videoElement");
+    var video1 = document.querySelector("#videoElement1");
 
     //Get the getUserMedia if it exists for this browser!
     navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia || navigator.oGetUserMedia;
@@ -29,6 +30,7 @@
     function handleVideo(stream) {
         //set the source of the video and video should auto play as set in the video tag attributes 
         video.src = window.URL.createObjectURL(stream);
+        video1.src = window.URL.createObjectURL(stream);
     }
 
     function videoError(e) {
