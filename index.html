@@ -24,27 +24,22 @@
         for(var k = 1; k <= width; k++){
             var tableCell = document.createElement("td");
             var tableRow = document.getElementById("column-"+i);
-            tableCell.setAttribute("class", "w"+ width + " h"+height)
             tableRow.appendChild(tableCell);
             var videoEle = document.createElement("video");
             videoEle.setAttribute("class", "video");
             tableCell.appendChild(videoEle);
-                //getUserMedia prompt for permission and call handleVideo else there is an error or the user denied permission
         }
 
     }
     var videos = document.getElementsByClassName('video');
     if (navigator.getUserMedia)  {
-
         navigator.mediaDevices.getUserMedia({ video: true }).then(function(stream) {
-
             for (var x = 0; x < videos.length; x ++) {
                 videos[x].src = window.URL.createObjectURL(stream);
                 videos[x].play();
             }
         });
     }
-
 </script>
 </body>
 </html>

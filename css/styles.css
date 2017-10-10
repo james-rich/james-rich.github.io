@@ -47,15 +47,14 @@ table {
     border-spacing: 0;
 }
 
+
+/* end of css reset */
+
 video{
-    margin-top: -3px;
     width:100%;
 }
 
-.w4{
+.width4{
     width:25%;
 }
 
-.h4{
-   height:25%;
-}
