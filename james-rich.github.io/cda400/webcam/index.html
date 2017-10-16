@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Cam</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+<div id="container">
+    <table id="video-table">
+
+    </table>
+</div>
+<script>
+    var height = 3;
+    var width = 4;
+    navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia || navigator.oGetUserMedia;
+    for(var i = 1; i <= height; i++) {
+        var table = document.getElementById("video-table");
+        var ctableRow = document.createElement("tr");
+        ctableRow.setAttribute("id", "column-"+i);
+        table.appendChild(ctableRow);
+        for(var k = 1; k <= width; k++){
+            var tableCell = document.createElement("td");
+            var tableRow = document.getElementById("column-"+i);
+            tableRow.appendChild(tableCell);
+            var videoEle = document.createElement("video");
+            videoEle.setAttribute("class", "video");
+            tableCell.appendChild(videoEle);
+        }
+
+    }
+    var videos = document.getElementsByClassName('video');
+    if (navigator.getUserMedia)  {
+        navigator.mediaDevices.getUserMedia({ video: true }).then(function(stream) {
+            for (var x = 0; x < videos.length; x ++) {
+                videos[x].src = window.URL.createObjectURL(stream);
+                videos[x].play();
+            }
+        });
+    }
+</script>
+</body>
+</html>
