@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="03f1c056-bbe4-4297-acdf-2dc09e5c200b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cda400/advanced/css/styles.css" afterPath="$PROJECT_DIR$/cda400/advanced/css/styles.css" />
-    </list>
+    <list default="true" id="03f1c056-bbe4-4297-acdf-2dc09e5c200b" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,8 +34,8 @@
       <file leaf-file-name="styles.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cda400/advanced/css/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+            <state relative-caret-position="255">
+              <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -162,12 +160,12 @@
       <updated>1508196209629</updated>
       <workItem from="1508196213502" duration="766000" />
       <workItem from="1508197183545" duration="14825000" />
-      <workItem from="1508256883087" duration="172000" />
+      <workItem from="1508256883087" duration="306000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15763000" />
+    <option name="totallyTimeSpent" value="15897000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-161" width="1570" height="900" extended-state="6" />
@@ -271,8 +269,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cda400/advanced/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+        <state relative-caret-position="255">
+          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
           <folding />
         </state>
       </provider>
