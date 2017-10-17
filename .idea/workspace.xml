@@ -2,16 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03f1c056-bbe4-4297-acdf-2dc09e5c200b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cda400/session4/img/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cda400/session4/img/second-logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cda400/session4/img/spark.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cda400/advanced/css/styles.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cda400/advanced/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cda400/session4/css/styles.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cda400/session4/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cda400/session4/second.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cda400/session4/spark.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,11 +13,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cda400/advanced/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="287">
               <caret line="23" column="132" lean-forward="false" selection-start-line="23" selection-start-column="132" selection-end-line="23" selection-end-column="132" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="17" column="89" lean-forward="true" selection-start-line="17" selection-start-column="89" selection-end-line="17" selection-end-column="89" />
               <folding />
             </state>
           </provider>
@@ -56,6 +56,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>span</find>
+      <find>&lt;/span&gt;</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -65,11 +66,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/cda400/session4/index.html" />
         <option value="$PROJECT_DIR$/cda400/session4/css/styles.css" />
         <option value="$PROJECT_DIR$/cda400/advanced/css/styles.css" />
         <option value="$PROJECT_DIR$/cda400/advanced/index.html" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -113,32 +114,6 @@
               <item name="james-rich.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="james-rich.github.io" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="cda400" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="james-rich.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="james-rich.github.io" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="cda400" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="advanced" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="james-rich.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="james-rich.github.io" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="cda400" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="advanced" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="james-rich.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="james-rich.github.io" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="cda400" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="session4" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="james-rich.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="james-rich.github.io" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="cda400" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="session4" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -186,12 +161,12 @@
       <option name="presentableId" value="Default" />
       <updated>1508196209629</updated>
       <workItem from="1508196213502" duration="766000" />
-      <workItem from="1508197183545" duration="13745000" />
+      <workItem from="1508197183545" duration="13894000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14511000" />
+    <option name="totallyTimeSpent" value="14660000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="30" y="0" width="1570" height="900" extended-state="6" />
@@ -240,14 +215,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="19" column="61" lean-forward="false" selection-start-line="19" selection-start-column="61" selection-end-line="19" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cda400/session4/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -276,6 +243,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="287">
           <caret line="23" column="132" lean-forward="false" selection-start-line="23" selection-start-column="132" selection-end-line="23" selection-end-column="132" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="17" column="89" lean-forward="true" selection-start-line="17" selection-start-column="89" selection-end-line="17" selection-end-column="89" />
           <folding />
         </state>
       </provider>
