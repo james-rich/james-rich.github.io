@@ -1,0 +1,51 @@
+h1, ul{
+    text-align: center;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+li{
+    line-height: 30px;
+}
+
+a:hover{
+    color: #00ff00;
+}
+a:active{
+    color: #ffffff;
+}
+
+#wrapper{
+    width: 920px;
+    border: 2px solid #000000;
+    margin: 0 auto;
+}
+
+#left_nav{
+    float: left;
+    bottom: 0;
+    top: 0;
+    width: 200px;
+    background-color: #ff0000;
+    height: 500px;
+}
+
+#section{
+    float: left;
+    width: 700px;
+    background-color: #00ff00;
+    height:500px;
+    padding: 0 10px;
+}
+
+img{
+    display: block;
+    margin: 0 auto;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
