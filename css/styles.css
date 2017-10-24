@@ -19,7 +19,7 @@ a:hover{
 
 nav{
  padding: 20px;
- width:10%;
+ width:15%;
  margin: 0 auto;
 }
 
@@ -36,3 +36,9 @@ nav ul li{
  border: 1px solid black;
 }
 
+#main{
+  display: flex;
+}
+#main div{
+ flex:1;
+}
