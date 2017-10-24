@@ -1,0 +1,144 @@
+/* The below section removes the default browser formatting  */
+
+* {
+    padding: 0;
+    margin: 0;
+   }
+
+#wrapper {
+   
+    /* 1) Width of the wrapper to 90% */
+    /* 2) Use the margin property to align the wrapper to the centre */ 
+    /* 3) Add a background linear-gradient */
+    width: 90%;
+    margin:0 auto;
+    background: linear-gradient(#c9c9c9, #ffffff);
+    height:   600px;
+ 
+}
+
+body {
+  font-family: arial, helvetica, sans-serif;
+}
+
+
+
+header {
+   
+    /* 4) Make the text color white */
+    color: #ffffff;
+    /* 5) Change the background color to black */
+    background-color: #000000;
+    /* 6) Align the text to the centre */
+    text-align: center;
+}
+
+aside  {  
+    /* 7) Set the width to 10% */
+    width: 10%;
+    background-color: black;
+    /* 8) Set the height to 100% for now (you may need to adjust this later) */
+	min-height: 100%;
+	/* 9) Float aside to the left, notice how the sections now layout side by side */ 
+    float: left;
+    position: relative;
+}
+
+nav {
+    background-color: black;
+    /* 10) Set this width to  80%;  */
+    width: 80%;
+    /* 11) Align the navbar to the center of its parent div, remember to use margin 0 auto */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+nav ul li {
+    /* 12) Remove the list style */
+    list-style: none;
+    text-align: center;
+    height: 30px;
+}
+
+.headNav ul li{
+    height: 30px;
+}
+ul li a{
+    /* 13) Remove the text decoration so the links 
+		   are not underlined  
+	*/
+    text-decoration: none;
+}
+
+a:link{
+    color: #ffffff;
+    background-color: orangered;
+    border-radius: 5px 8px 5px 0;
+    width: 100%;
+    padding: 2px 5px;
+    border: 2px dotted #cccccc;
+}
+nav ul li a:hover{
+    font-size: large;
+    color: #000000;
+    background-color: blueviolet;
+}
+.headNav ul li a:hover{
+    color: #000000;
+    background-color: blueviolet;
+
+}
+a:visited{
+    color: #00ffe4;
+}
+a:active{
+    color: #0000ff;
+}
+.headNav{
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+}
+.headNav ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+a {
+    -webkit-transition: font-size .4s;
+    -moz-transition: padding .4s;
+    -o-transition: padding .4s;
+    transition: padding .4s;
+}
+
+
+
+
+section {
+    width: 88%;
+    float: left;
+    /* 14) Add some padding to section so the text does not touch the sides*/
+    padding: 1%;
+    /* 15) Add a border with a radius to section  */
+    border-radius: 10px;
+}
+
+section h2 {
+    /*16) Align the h2 to the center */
+    text-align: center;
+}
+footer {
+    color: white;
+    background-color: blue;
+   
+    /* 17) give the footer a width of 100% */
+    width: 100%;
+    /* 18) Float the footer to the left, this will ensure it stick to bottom */
+    float: left;
+    /* 19) Align the text to the center */ 
+    text-align: center;
+}
+
+/*  20) Make any final tweaks to make your site layout correctly */
