@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03f1c056-bbe4-4297-acdf-2dc09e5c200b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cda400/session5/css/main.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cda400/session5/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/scripts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cda400/advanced/img/main_picture.jpg" afterPath="$PROJECT_DIR$/cda400/advanced/img/main_picture.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/security/diffie.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cda400/advanced/css/styles.css" afterPath="$PROJECT_DIR$/cda400/advanced/css/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cda400/advanced/index.html" afterPath="$PROJECT_DIR$/cda400/advanced/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cda400/session4/css/styles.css" afterPath="$PROJECT_DIR$/cda400/session4/css/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/styles.css" afterPath="$PROJECT_DIR$/css/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cda400/session5/css/main.css" afterPath="$PROJECT_DIR$/cda400/session5/css/main.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,11 +15,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
               <caret line="20" column="124" lean-forward="false" selection-start-line="20" selection-start-column="124" selection-end-line="20" selection-end-column="124" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cda400/session5/css/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="296">
+              <caret line="51" column="14" lean-forward="false" selection-start-line="51" selection-start-column="14" selection-end-line="51" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="diffie.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/security/diffie.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="455">
+              <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -86,6 +98,8 @@
         <option value="$PROJECT_DIR$/js/scripts.js" />
         <option value="$PROJECT_DIR$/css/styles.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/cda400/session5/css/main.css" />
+        <option value="$PROJECT_DIR$/security/diffie.py" />
       </list>
     </option>
   </component>
@@ -151,7 +165,19 @@
             <path>
               <item name="james-rich.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="james-rich.github.io" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="cda400" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="session5" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="james-rich.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="james-rich.github.io" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="james-rich.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="james-rich.github.io" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="security" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -211,12 +237,12 @@
       <workItem from="1508346115791" duration="1836000" />
       <workItem from="1508594936260" duration="4555000" />
       <workItem from="1508802647765" duration="1807000" />
-      <workItem from="1508846264889" duration="52000" />
+      <workItem from="1508846264889" duration="1975000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38067000" />
+    <option name="totallyTimeSpent" value="39990000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-161" width="1570" height="900" extended-state="6" />
@@ -427,13 +453,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cda400/session5/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="80" column="13" lean-forward="false" selection-start-line="80" selection-start-column="13" selection-end-line="80" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cda400/session5/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -468,6 +487,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="20" column="124" lean-forward="false" selection-start-line="20" selection-start-column="124" selection-end-line="20" selection-end-column="124" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cda400/session5/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="51" column="14" lean-forward="false" selection-start-line="51" selection-start-column="14" selection-end-line="51" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/security/diffie.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding />
         </state>
       </provider>
