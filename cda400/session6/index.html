@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms</title>
+</head>
+<body>
+<form>
+    <p><label for="name">User Name*</label><input id="name" type="text" name="name" required /></p>
+    <p><label for="email">Email*</label><input id="email" type="email" name="emails" required/></p>
+    <p><label for="number">Number*</label><input id="number" type="number" name="number" required/></p>
+    <p><label for="year">What year are you in*</label></p>
+    <p><select id="year" name="year" required>
+        <option value="">Please Select</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="4">4</option>
+    </select></p>
+    <fieldset>
+        <legend>What electronic devices do you use?</legend>
+        <p><input id="computer" type="checkbox" name="electronic_devices" value="computer"/></p>
+        <p><label for="ebook">What electronic devices do you use?</label></p>
+        <p><input id="ebook"  type="checkbox" name="electronic_devices" value="ebook"/></p>
+        <p><label for="phone">What electronic devices do you use?</label></p>
+        <p><input id="phone" type="checkbox" name="electronic_devices" value="phone"/></p>
+    </fieldset>
+    <fieldset>
+        <legend>How many hours a day do you spend using electronic devices?</legend>
+        <p><input id="hours_1" type="radio" name="hours" value="1"/></p>
+        <p><input id="hours_2" type="radio" name="hours" value="2"/></p>
+        <p><input id="hours_3" type="radio" name="hours" value="3"/></p>
+        <p><input id="hours_over" type="radio" name="hours" value="3+"/></p>
+    </fieldset>
+    <p><input type="submit" value="Submit"/></p>
+</form>
+</body>
+</html>
