@@ -1,0 +1,50 @@
+*{
+    font-family: arial;
+}
+
+h1, h2, h3, h4, h5, h6{
+    text-align: center;
+}
+
+.wrapper{
+    margin: 0 auto;
+    max-width: 920px;
+    width: 920px;
+}
+header{
+    text-align: center;
+}
+header ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+header ul li{
+    display: inline-block;
+}
+
+#about_me,#technical_background {
+background-color: red;
+    width: 50%;
+    float: left;
+}
+#technical_background{
+    background-color: midnightblue;
+}
+
+table{
+    margin: 0 auto;
+}
+table th{
+    text-align: center;
+}
+table .skill{
+    font-weight: bold;
+}
+table tr:nth-child(odd){
+    background-color: #c9c9c9;
+}
+
+footer p{
+    text-align: center;
+}
