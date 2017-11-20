@@ -58,7 +58,9 @@ aside h2:first-child::before {
     background-color: orange;
 }
 
-
+section h2{
+    text-align: center;
+}
 
 section:after {
     content: "";
