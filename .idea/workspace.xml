@@ -2,16 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03f1c056-bbe4-4297-acdf-2dc09e5c200b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cda400/session9/img/main_picture.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cda400/session8/css/styles.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cda400/session8/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cda400/session9/css/styles.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cda400/session9/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cda400/session9/js/firebase.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cda400/session9/list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cda400/advanced/index.html" afterPath="$PROJECT_DIR$/cda400/advanced/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cda400/tca/css/styles.css" afterPath="$PROJECT_DIR$/cda400/tca/css/styles.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -63,11 +53,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="list.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="list.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cda400/session9/list.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="178">
               <caret line="69" column="45" lean-forward="false" selection-start-line="69" selection-start-column="45" selection-end-line="69" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="430">
+              <caret line="26" column="124" lean-forward="false" selection-start-line="26" selection-start-column="124" selection-end-line="26" selection-end-column="124" />
               <folding />
             </state>
           </provider>
@@ -147,7 +147,6 @@
         <option value="$PROJECT_DIR$/security/index.html" />
         <option value="$PROJECT_DIR$/cda400/session6/index.html" />
         <option value="$PROJECT_DIR$/cda400/tca/index.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/cda400/tca/css/styles.css" />
         <option value="$PROJECT_DIR$/cda400/session8/css/styles.css" />
         <option value="$PROJECT_DIR$/cda400/session8/index.html" />
@@ -155,6 +154,7 @@
         <option value="$PROJECT_DIR$/cda400/session9/css/styles.css" />
         <option value="$PROJECT_DIR$/cda400/session9/index.html" />
         <option value="$PROJECT_DIR$/cda400/session9/list.html" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -314,12 +314,12 @@
       <workItem from="1510665363049" duration="263000" />
       <workItem from="1510665643246" duration="3380000" />
       <workItem from="1510709829565" duration="87000" />
-      <workItem from="1511196481527" duration="15504000" />
+      <workItem from="1511196481527" duration="15653000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89185000" />
+    <option name="totallyTimeSpent" value="89334000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="30" y="0" width="1570" height="900" extended-state="6" />
@@ -641,13 +641,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="124" lean-forward="false" selection-start-line="25" selection-start-column="124" selection-end-line="25" selection-end-column="124" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cda400/tca/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -716,6 +709,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="178">
           <caret line="69" column="45" lean-forward="false" selection-start-line="69" selection-start-column="45" selection-end-line="69" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="26" column="124" lean-forward="false" selection-start-line="26" selection-start-column="124" selection-end-line="26" selection-end-column="124" />
           <folding />
         </state>
       </provider>
