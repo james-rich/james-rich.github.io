@@ -1,0 +1,110 @@
+body{
+    font-family: arial;
+    background: linear-gradient(#ffffff, #c9c9c9);
+    min-height: 100vh;
+
+}
+#wrapper{
+    width: 980px;
+    margin: 0 auto;
+}
+
+header{
+    text-align: center;
+    margin-bottom: 100px;
+}
+h1{
+
+}
+p{
+    font-size: 12px;
+}
+#inner{
+    height: 400px;
+    overflow: hidden;
+}
+
+img{
+    float: left;
+    margin-left: 100px;
+    margin-right: 70px;
+    width: 500px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.56);
+}
+
+aside{
+    float: left;
+    padding: 0 10px;
+    max-width: 290px;
+}
+
+
+aside h2:first-child{
+    text-align: left;
+    position: relative;
+    margin-top: 0;
+}
+
+aside p{
+    text-align: justify;
+}
+
+aside h2:first-child::before {
+    content: '';
+    position: absolute;
+    bottom: -3px; left: 0;
+    width: 100px;
+    height: 5px;
+    background-color: orange;
+}
+
+
+
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+section .block {
+    display: block;
+    float: left;
+    width:320px;
+    padding: 0 0;
+    text-align: justify;
+}
+
+section .block:first-child{
+    margin-left: 10px;
+    padding: 0 10px 0 0;
+    width:310px;
+}
+
+section .block:last-child{
+    margin-right: 10px;
+    padding: 0 0 0 10px;
+    width:310px;
+}
+
+.block h3{
+    text-align: center;
+}
+
+form input{
+    float: right;
+}
+
+
+#user_data_table{
+    text-align: left;
+    margin: 0 auto;
+    width: 100%;
+}
+
+#user_data_table thead{
+    background-color: #cccccc;
+}
+
+#user_data_table tbody tr:nth-child(odd){
+    background-color: orangered;
+}

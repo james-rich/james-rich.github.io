@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+    <title>HTML - Form </title>
+    <meta charset="utf-8">
+    <meta name="description" content="Session 8 form task">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<!-- This is a large un-styled form -->
+<h1> Travel Survey</h1>
+<form>
+
+    <!-- Personal Information  -->
+    <fieldset>
+        <legend>Personal Information</legend>
+        <p><label> First Name(*): </label> <input type="text" name="first_name"></p>
+        <p></p><label> Last Name(*):   </label> <input type="text" name="last_name"></p>
+    </fieldset>
+        <!-- Contact Information -->
+    <fieldset>
+        <legend>Contact Information</legend>
+        <p><label> Address Line 1(*): </label> <input type="text" name="address_1" required></p>
+        <p><label>Post Code(*) </label> <input type="text" name="post_code"></p>
+        <p><label>Phone Number1(*) </label> <input type="text" name="phone1"></p>
+        <p><label>Phone Number2</label><input type="text" name="phone2"></p>
+        <p><label> Email(*): </label> <input type="text" name="address_1"></p>
+    </fieldset>
+    <!-- Travel  Information -->
+    <fieldset>
+        <legend>Travel  Information</legend>
+
+        <p><label> How do you normally travel to university?</label></p>
+
+        <p><input type="radio" name="tasport_method" value="drive"> Drive</p>
+        <p><input type="radio" name="tasport_method" value="public"> Public transport</p>
+        <p><input type="radio" name="tasport_method" value="public"> Walk</p>
+
+        <p><label> How long does it take you to travel in? </label>
+        <select name="travel_time">
+            <option value="10">0 - 10 mins</option>
+            <option value="20">10 - 20 mins</option>
+            <option value="30">20 - 30 mins</option>
+            <option value="30+">30 mins +</option>
+        </select></p>
+    </fieldset>
+    <!--  Declaration  -->
+    <fieldset>
+        <legend>Declaration</legend>
+
+        <p><label> Are you happy for us to email you</label></p>
+        <p><input type="radio" name="yes" value="yes"> Yes</p>
+        <p><input type="radio" name="no" value="no">No</p>
+    </fieldset>
+    <!-- Submit button -->
+    <p><input type="submit"></p>
+</form>
+</body>
+</html>
