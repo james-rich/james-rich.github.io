@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript Page - Session 1</title>
+    <script type="text/javascript">
+        function calculateNumber() {
+            var number1 = parseInt(document.getElementById("number1").value)
+
+            var number2 = parseInt(document.getElementById("number2").value)
+
+            var number3 = parseInt(document.getElementById("number3").value)
+
+            document.getElementById("result").innerHTML = (number1 + number2 + number3);
+        }
+    </script>
+</head>
+<body>
+    <h2>Exercise 1 & 2</h2>
+    <script type="text/javascript">
+        //simple codee to demonstrate output
+        document.write("Hello World!");
+        document.write("<h1>This is a heading</h1>");
+        document.write("<p>This is a paragraph</p>");
+
+
+        var name;
+        var age;
+        var yourLocation;
+
+        name = "James";
+
+        age = "33";
+
+        yourLocation = "Southampton";
+
+        document.write("<p>Your name: " + name + "</p>");
+        document.write("<p>Your age: " + age + "</p>");
+        document.write("<p>Your location: " + yourLocation + "</p>");
+
+    </script>
+
+    <h2>Exercise 3</h2>
+
+    <p><input type="number" placeholder="enter number 1" id="number1"></p>
+
+    <p><input type="number" placeholder="enter number 1" id="number2"></p>
+
+    <p><input type="number" placeholder="enter number 1" id="number3"></p>
+
+    <p><button onclick="calculateNumber()">Click Me</button></p>
+
+    <p id="result"></p>
+
+</body>
+</html>
