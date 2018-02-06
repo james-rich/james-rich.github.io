@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced Task Session 4</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="wrapper" class="clearfix">
+        <header><h1>Main Heading</h1></header><!--/header-->
+        <section>
+            <h2>User Data Table</h2>
+            <div>
+                <form action="#"><input type="text" id="user_name"><input type="text" id="message"><input type="button" onclick="add_user()" ></form>
+                <table id="user_data_table">
+                    <thead>
+                        <th>Name</th>
+                        <th>Message</th>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </section><!--/Section-->
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-messaging.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyD30MU9-0hYceCIGYxH6ojzG3c20hTIABI",
+            authDomain: "localhost",
+            databaseURL: "https://cda400-83067.firebaseio.com",
+            projectId: "cda400-83067",
+            storageBucket: "cda400-83067.appspot.com",
+            messagingSenderId: "191913862279"
+        };
+
+
+
+        firebase.initializeApp(config);
+
+        function add_user () {
+            var name = document.getElementById('name');
+            var email = document.getElementById('email');
+            var phone_number = document.getElementById('phone_number');
+
+            user.push().update({
+                name: name.value,
+                email: email.value,
+                phone_number: phone_number.value,
+                createdAt: Date.now()
+            });
+        }
+
+        var users = firebase.database().ref('chat/');
+
+        var user_data_table = document.getElementById('user_data_table').lastElementChild;
+
+
+        users.on("child_added", function(data) {
+            var user_tr = document.createElement('tr');
+            var user = data.val();
+            var name = document.createElement('td');
+            name.innerHTML = user.user_name;
+            var email = document.createElement('td');
+            email.innerHTML = user.message;
+            user_tr.appendChild(name);
+            user_tr.appendChild(email);
+            user_tr.appendChild(phone);
+            user_data_table.appendChild(user_tr);
+
+        });
+    </script>
+</body>
+</html>

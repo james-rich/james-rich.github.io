@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript Page - Session 2 Exercise 1</title>
+    <script type="text/javascript">
+        function calculateNumber() {
+            var name = document.getElementById("name").value;
+
+            var age = parseInt(document.getElementById("age").value);
+
+            var location = document.getElementById("location").value;
+
+            if (name === "james" && age === 33){
+                document.getElementById("result").innerHTML = "<p>Hello " + name + "</p><p>" + "Your age is " + age + "</p><p>" + "and you live in " + location + "</p>";
+            }else{
+                document.getElementById("result").innerHTML = "";
+            }
+
+
+        }
+    </script>
+</head>
+<body>
+    <h2>Exercise 1</h2>
+
+    <p><input type="text" placeholder="name" id="name"></p>
+
+    <p><input type="number" placeholder="age" id="age"></p>
+
+    <p><input type="test" placeholder="location" id="location"></p>
+
+    <p><button onclick="calculateNumber()">Click Me</button></p>
+
+    <p id="result"></p>
+
+</body>
+</html>

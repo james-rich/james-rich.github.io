@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced Task Session 4</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="wrapper" class="clearfix">
+        <header><h1>Main Heading</h1></header><!--/header-->
+        <div id="inner">
+            <img src="img/main_picture.jpg" alt="Solent Building">
+            <aside>
+                <h2>Sub Section</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consectetur dicta dolor doloribus dolorum eos excepturi harum maiores mollitia nam nisi, numquam odit quam rem, repellat sed sequi temporibus veniam?
+                </p>
+                <h3>Title</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum enim eveniet harum hic ipsum laudantium optio quidem rem sit voluptas. Debitis dolore doloribus laudantium obcaecati officia quibusdam rem sint totam?
+                </p>
+                <h3>List of Users</h3>
+                <p><a href="list.html">list of uses</a></p>
+
+            </aside><!--aside-->
+        </div><!--/Inner-->
+        <section>
+            <div class="block request">
+                <h3>Form</h3>
+                <form action="#">
+                    <fieldset>
+                        <legend>Contact Information</legend>
+                        <p><label for="name">Name:</label><input type="text" id="name"></p>
+                        <p><label for="email">Name:</label><input type="email" id="email"></p>
+                        <p><label for="phone_number">Phone Number:</label><input type="number" id="phone_number"></p>
+                        <input type="submit" onclick="add_user()">
+                    </fieldset>
+                </form>
+            </div><!--/block-->
+            <div class="block">
+                <h3>Title</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis distinctio doloremque dolorum ea facere in, obcaecati placeat quia sed similique. Asperiores impedit ipsa iure mollitia natus, reiciendis rerum unde voluptate! Cum, enim sunt! A accusamus alias aliquam assumenda atque cum cupiditate dicta distinctio est facilis itaque laudantium magni natus optio perferendis placeat quod sapiente, sed ut veniam voluptas voluptates, voluptatum? Atque culpa fugiat, ipsa necessitatibus odio quia repellat veritatis! Accusantium aut cumque deserunt dolore dolorem error esse fuga fugiat harum laudantium nemo perspiciatis rerum sed soluta sunt, voluptas voluptatibus voluptatum.</p>
+            </div><!--/block-->
+            <div class="block">
+                <h3>Title</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consectetur eum exercitationem ipsa officiis optio placeat quibusdam quisquam veniam voluptates. Aperiam culpa ipsam laudantium libero magni maxime minima quod voluptate? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad ducimus eligendi error ex facere id illum itaque iusto laboriosam minima molestiae nostrum pariatur, quam qui rerum tempore velit veniam voluptate.</p>
+            </div><!--/block-->
+        </section><!--/Section-->
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-messaging.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyD30MU9-0hYceCIGYxH6ojzG3c20hTIABI",
+            authDomain: "localhost",
+            databaseURL: "https://cda400-83067.firebaseio.com",
+            projectId: "cda400-83067",
+            storageBucket: "cda400-83067.appspot.com",
+            messagingSenderId: "191913862279"
+        };
+
+
+
+        firebase.initializeApp(config);
+
+        var user = firebase.database().ref('users');
+
+        function add_user () {
+            var name = document.getElementById('name');
+            var email = document.getElementById('email');
+            var phone_number = document.getElementById('phone_number');
+
+            user.push().update({
+                name: name.value,
+                email: email.value,
+                phone_number: phone_number.value,
+                createdAt: Date.now()
+            });
+            console.log('done', name.value);
+        }
+    </script>
+</body>
+</html>
