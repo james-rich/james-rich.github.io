@@ -20,19 +20,19 @@ var provider = new firebase.auth.GoogleAuthProvider();
 //var provider = new firebase.auth.FacebookAuthProvider();
 
 var user = firebase.auth().currentUser;
-
+var userRes;
 if(!user) {
     firebase.auth().signInWithPopup(provider).then(function (result) {
         // This gives you a Google Access Token. You can use it to access the Google API.
         var token = result.credential.accessToken;
         // The signed-in user info.
-        var user = result.user;
+        userRes = result.user;
         // ...
         console.log(result.user.email);
-        document.getElementById("userName").innerText = user.displayName;
-        firebase.database().ref('users/'+user.displayName).set({
-            userName: result.user.email,
-            name: user.displayName
+        document.getElementById("userName").innerText = userRes.displayName;
+        firebase.database().ref('users/'+userRes.displayName).set({
+            userName: result.userRes.email,
+            name: userRes.displayName
         })
     }).catch(function (error) {
         console.log(error);
@@ -45,7 +45,7 @@ function writeMessage() {
     var userMessage = document.getElementById("userMessage").value;
     var currentTime = new Date;
     firebase.database().ref('messages/' + currentTime).set({
-        userName: user.displayName,
+        userName: userRes.displayName,
         userMessage: userMessage
     });
     document.getElementById("userMessage").value = "";

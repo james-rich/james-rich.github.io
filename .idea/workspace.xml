@@ -27,7 +27,7 @@
         <entry file="file://$PROJECT_DIR$/cda401/session2/advanced/js/scripts.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="589">
-              <caret line="47" column="34" lean-forward="false" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
+              <caret line="47" column="25" lean-forward="false" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -252,7 +252,7 @@
       <workItem from="1513076856103" duration="1421000" />
       <workItem from="1513084424596" duration="157000" />
       <workItem from="1518439357600" duration="67000" />
-      <workItem from="1518439436090" duration="4093000" />
+      <workItem from="1518439436090" duration="4318000" />
     </task>
     <task id="LOCAL-00001" summary="remove git data">
       <created>1517882999420</created>
@@ -265,7 +265,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115152000" />
+    <option name="totallyTimeSpent" value="115377000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="24" width="1920" height="2136" extended-state="4" />
@@ -654,7 +654,7 @@
     <entry file="file://$PROJECT_DIR$/cda401/session2/advanced/js/scripts.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="589">
-          <caret line="47" column="34" lean-forward="false" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
+          <caret line="47" column="25" lean-forward="false" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
           <folding />
         </state>
       </provider>
