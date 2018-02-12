@@ -45,7 +45,7 @@ function writeMessage() {
     var userMessage = document.getElementById("userMessage").value;
     var currentTime = new Date;
     firebase.database().ref('messages/' + currentTime).set({
-        userName: userName,
+        userName: user.displayName,
         userMessage: userMessage
     });
     document.getElementById("userMessage").value = "";
