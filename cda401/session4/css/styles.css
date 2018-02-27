@@ -1,0 +1,19 @@
+.container{
+    text-align: center;
+}
+
+.switch{
+    display: inline-block;
+    width: 400px;
+    background-color: red;
+    color: #F5F5F5;
+    font-weight: bold;
+}
+
+.stick{
+    display: inline-block;
+    width: 400px;
+    background-color: blue;
+    color: #F5F5F5;
+    font-weight: bold;
+}

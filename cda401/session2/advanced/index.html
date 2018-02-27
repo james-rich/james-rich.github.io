@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat App</title>
+
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-database.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyCgexEBR9M-UqlTiWHJHUh_Mc-uOLlF5w0",
+            authDomain: "chatalot-2ad3c.firebaseapp.com",
+            databaseURL: "https://chatalot-2ad3c.firebaseio.com",
+            projectId: "chatalot-2ad3c",
+            storageBucket: "chatalot-2ad3c.appspot.com",
+            messagingSenderId: "972993895502"
+        };
+        firebase.initializeApp(config);
+
+        var provider = new firebase.auth.GoogleAuthProvider();
+
+        firebase.auth().signInWithPopup(provider).then(function(result) {
+            // This gives you a Google Access Token. You can use it to access the Google API.
+            var token = result.credential.accessToken;
+            // The signed-in user info.
+            var user = result.user;
+            // ...
+            console.log(result.user.email);
+            document.getElementById("userName").innerText = result.user.email;
+            document.getElementById("userId").innerText = result.user.uid;
+            console.log(result.user.uid);
+            firebase.database().ref('users/' + result.user.uid).set({
+                userName: result.user.email
+            })
+        }).catch(function(error) {
+            // Handle Errors here.
+            var errorCode = error.code;
+            var errorMessage = error.message;
+            // The email of the user's account used.
+            var email = error.email;
+            // The firebase.auth.AuthCredential type that was used.
+            var credential = error.credential;
+            // ...
+        });
+        var database = firebase.database();
+
+        function writeUserData(userId, userName, message) {
+            firebase.database().ref('messages/' + userId).set({
+                userName:userName,
+                chatMessage: message
+            });
+        }
+
+        function prepareData(){
+            var userId = document.getElementById("userId").innerText;
+            var textField = document.getElementById("userMessage");
+            var username = document.getElementById("userName").innerText;
+            var userMessage = textField.value;
+            textField.innerText = "";
+            writeUserData(userId, userMessage);
+            console.log(userId, username, userMessage);
+        }
+
+/*        var userId = firebase.auth().currentUser.uid;
+        return firebase.database().ref('/messages/').once('value').then(function(snapshot) {
+                var messages = (snapshot.val() && snapshot.val().username) || 'Anonymous';
+                // ...
+        });*/
+    </script>
+
+</head>
+<body>
+ <p><input type="text" id="userId" hidden> <label id="userName" for="userMessage"></label><input id="userMessage" type="text" size="50"> <button onclick="prepareData()">Send</button></p>
+</body>
+</html>
