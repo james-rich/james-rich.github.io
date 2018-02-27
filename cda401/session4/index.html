@@ -8,24 +8,32 @@
 </head>
 <body onload="main()">
 <div class="container">
-    <h1>Monty Hall</h1>
-    <div class="switch">
-        <p>Switch Wins</p>
-        <p id="switch">
 
-        </p>
+    <div class="switch">
+        <h2>Switch Wins</h2>
+        <p id="switch_user_0"></p>
+        <p id="switch_user_1"></p>
+        <p id="switch_user_2"></p>
+    </div>
+    <div class="users">
+        <h2>Users</h2>
+        <p id="user_0">User 1</p>
+        <p id="user_1">User 2</p>
+        <p id="user_2">User 3</p>
     </div>
     <div class="stick">
-        <p>Stick Wins</p>
-        <p id="stick">
-
-        </p>
+        <h2>Stick Wins</h2>
+        <p id="stick_user_0"></p>
+        <p id="stick_user_1"></p>
+        <p id="stick_user_2"></p>
     </div>
-    <p>
+    <div class="rerun">
         <input type="number" id="runs">
-        <button onclick="run()">Run</button>
-
-    </p>
+        <br>
+        <button onclick="run()">Run Again</button>
+        <p><small>(Default is 1)</small></p>
+    </div>
+    <a href="interactive.html">Interactive Version</a>
 </div>
 </body>
 </html>
