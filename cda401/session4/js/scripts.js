@@ -38,14 +38,14 @@ function main() {
 
         if(gameArray[pick] === 'car'){
             stickWins += 1;
-            document.getElementById('stick').innerHTML = stickWins + " - " + Math.round((stickWins / runs) * 100) + "%";
+            document.getElementById('stick').innerHTML = stickWins + " Wins<br>" + Math.round((stickWins / runs) * 100) + "%";
         }
 
         pick = switchDoor();
 
         if(gameArray[pick] === 'car'){
             switchWins += 1;
-            document.getElementById('switch').innerHTML = switchWins + " - " + Math.round((switchWins / runs) * 100) + "%";
+            document.getElementById('switch').innerHTML = switchWins + " Wins<br>" + Math.round((switchWins / runs) * 100) + "%";
         }
 
     }
@@ -54,4 +54,16 @@ function main() {
         game();
         //console.log("Stick: " + stickWins + "\nSwitch: " + switchWins);
     }
+
+
+}
+function run() {
+    var reRun = document.getElementById('runs').value;
+    pick = null;
+    gameArray = null;
+    revealedDoor = null;
+    stickWins = 0;
+    switchWins = 0;
+    runs = reRun;
+    main();
 }
