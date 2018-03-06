@@ -1,0 +1,41 @@
+.hidden{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+input{
+    display: block;
+    float: right;
+}
+
+body{
+    overflow: auto;
+}
+
+.left, .right{
+    width: 45%;
+}
+
+.right{
+    float: right;
+}
+
+.left{
+    float: left;
+}
+
+#contact_list p{
+    margin: 0;
+}
+
+#contact_list p:nth-child(odd){
+    background-color: #c9c9c9;
+}
+
+#contact_list p:nth-child(even){
+    background-color: #848484;
+}
+

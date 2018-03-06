@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+    <script>
+        var config = {
+            apiKey: "AIzaSyD30MU9-0hYceCIGYxH6ojzG3c20hTIABI",
+            authDomain: "cda400-83067.firebaseapp.com",
+            databaseURL: "https://cda400-83067.firebaseio.com",
+            projectId: "cda400-83067",
+            storageBucket: "cda400-83067.appspot.com",
+            messagingSenderId: "191913862279"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="js/scripts.js"></script>
+    <script type="text/javascript">
+
+    </script>
+</head>
+<body onload="main()">
+<div class="left">
+<form action="#">
+    <p><span>Name:</span><input type="text" id="name" required></p>
+    <p id="name_label" class="hidden">Name field is required</p>
+    <p><span>Age:</span><input type="text" id="age" required></p>
+    <p id="age_label" class="hidden">age field is required</p>
+    <p><span>Location:</span><input type="text" id="location" required></p>
+    <p id="location_label" class="hidden">Location field is required</p>
+    <p><span>Email:</span><input type="email" id="email" required></p>
+    <p id="email_label" class="hidden">Email field is required</p>
+    <p><span>Phone Number:</span><input type="tel" id="phone_number" required></p>
+    <p id="phone_label" class="hidden">Telephone number field is required</p>
+    <p><span>Address Line 1:</span><input type="text" id="address_line_1" required></p>
+    <p  id="address_label" class="hidden">Address field is required</p>
+    <p><span>Post Code:</span><input type="text" id="post_code" required></p>
+    <p id="post_code_label" class="hidden">Post Code field is required</p>
+    <p><button onclick="validate_form()">Submit</button></p>
+</form>
+</div>
+<div class="right">
+    <h3>Contact List</h3>
+    <div id="contact_list">
+    </div>
+</div>
+</body>
+</html>
