@@ -1,19 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
 .container{
+    text-align: center;
+    max-width: 960px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.switch, .stick, .users{
+    float: left;
+    width: 320px;
+    background-color: black;
+    color: #F5F5F5;
+    font-weight: bold;
+}
+
+#switch_user_0, #stick_user_0, #user_0{
+    background-color: red;
+}
+#switch_user_1, #stick_user_1, #user_1{
+    background-color: green;
+}
+#switch_user_2, #stick_user_2, #user_2{
+    background-color: blue;
+}
+
+p{
+    height: 50px;
+}
+
+
+/*INTERACTIVE VERSION*/
+
+.options-container{
+    width: 960px;
+    height: 320px;
+    margin: 0 auto;
     text-align: center;
 }
 
-.switch{
-    display: inline-block;
-    width: 400px;
-    background-color: red;
-    color: #F5F5F5;
-    font-weight: bold;
+#option-0, #option-1, #option-2{
+    width: 320px;
+    height: 320px;
+    float: left;
 }
 
-.stick{
-    display: inline-block;
-    width: 400px;
+#option-0{
+    background-color: red;
+}
+
+#option-1{
+    background-color: green;
+}
+
+#option-2{
     background-color: blue;
-    color: #F5F5F5;
-    font-weight: bold;
+}
+
+.car_image{
+    background-image: url("../img/320_3.png");
+}
+.goat_1{
+    background-image: url("../img/320_1.png");
+}
+.goat_2{
+    background-image: url("../img/320_2.png");
+}
+.hide{
+    background-image: none;
 }

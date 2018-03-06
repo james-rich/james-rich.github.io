@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Monty Hall</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/interactive.js"></script>
+</head>
+<body onload="main()">
+    <div class="container">
+        <h1>Monty Hall Interactive</h1>
+        <p id="commands">Setting up...</p>
+        <div class="options-container">
+            <div id="option-0" onclick="userChoice(0)"></div>
+            <div id="option-1" onclick="userChoice(1)"></div>
+            <div id="option-2" onclick="userChoice(2)"></div>
+        </div>
+        <span id="switch">Switch Wins: 0</span> <span> VS </span> <span id="stick">Stick wins: 0</span>
+        <br>
+        <button onclick="main()">Again</button>
+        <br>
+        <br>
+        <a href="index.html">Back to index</a>
+    </div>
+</body>
+</html>

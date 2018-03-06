@@ -1,10 +1,20 @@
 var pick;
 var gameArray;
 var revealedDoor;
-var stickWins = 0;
-var switchWins = 0;
-var runs = 100000;
+var runs = 1;
+var u0 = {switchWins: 0, stickWins: 0};
+var u1 = {switchWins: 0, stickWins: 0};
+var u2 = {switchWins: 0, stickWins: 0};
+var users = [u0, u1, u2];
+
+
+
 function main() {
+    function resetVars() {
+        pick = null;
+        gameArray = null;
+        revealedDoor = null;
+    }
 
     function getRandomArbitary(max){
         return Math.floor(Math.random() * Math.floor(max))
@@ -13,7 +23,7 @@ function main() {
 
     function openDoor() {
         for(var i = 0; i < gameArray.length; i++){
-            if(i != pick && gameArray[i] !== 'car'){
+            if(i !== pick && gameArray[i] !== 'car'){
                 return i;
             }
         }
@@ -21,13 +31,14 @@ function main() {
 
     function switchDoor() {
         for(var i = 0; i < gameArray.length; i++){
-            if(i != pick && i != revealedDoor){
+            if(i !== pick && i !== revealedDoor){
                 return i;
             }
         }
     }
 
-    function game() {
+    function game(user) {
+        resetVars();
         gameArray = ['goat','goat','goat'];
 
         gameArray[getRandomArbitary(3)] = 'car';
@@ -37,33 +48,43 @@ function main() {
         revealedDoor = openDoor();
 
         if(gameArray[pick] === 'car'){
-            stickWins += 1;
-            document.getElementById('stick').innerHTML = stickWins + " Wins<br>" + Math.round((stickWins / runs) * 100) + "%";
+            users[user].stickWins += 1;
+            window.setTimeout(update(user), 1);
         }
 
         pick = switchDoor();
 
         if(gameArray[pick] === 'car'){
-            switchWins += 1;
-            document.getElementById('switch').innerHTML = switchWins + " Wins<br>" + Math.round((switchWins / runs) * 100) + "%";
+            users[user].switchWins += 1;
+            window.setTimeout(update(user), 1);
         }
 
     }
 
     for(var i = 0; i < runs; i++){
-        game();
+        for(var j = 0;j < 3; j++) {
+            game(j);
+
+        }
         //console.log("Stick: " + stickWins + "\nSwitch: " + switchWins);
     }
 
 
 }
+
+function update(user) {
+    document.getElementById('stick_user_'+user).innerHTML = users[user].stickWins + " Wins<br>" + Math.round((users[user].stickWins / runs) * 100) + "%";
+    document.getElementById('switch_user_'+user).innerHTML = users[user].switchWins + " Wins<br>" + Math.round((users[user].switchWins / runs) * 100) + "%";
+}
+
 function run() {
-    var reRun = document.getElementById('runs').value;
-    pick = null;
-    gameArray = null;
-    revealedDoor = null;
-    stickWins = 0;
-    switchWins = 0;
-    runs = reRun;
+    var newRun  =document.getElementById('runs').value;
+    runs = newRun < 1? 1: newRun;
+    users[0].switchWins = 0;
+    users[0].stickWins = 0;
+    users[1].switchWins = 0;
+    users[1].stickWins = 0;
+    users[2].switchWins = 0;
+    users[2].stickWins = 0;
     main();
 }
