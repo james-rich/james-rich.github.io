@@ -31,6 +31,10 @@ body{
     margin: 0;
 }
 
+#contact_list p span{
+    float: right;
+}
+
 #contact_list p:nth-child(odd){
     background-color: #c9c9c9;
 }

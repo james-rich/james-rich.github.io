@@ -126,10 +126,24 @@ function validate_form(event){
 }
 
 function recordsUpdated(snap) {
-    var contacts = "";
-
+    document.getElementById("contact_list").innerHTML = "";
     snap.forEach(function(record){
-        contacts += '<p> Name: ' + record.val().name + '<br>Email: ' + record.val().email + '</p>'
+        var span = document.createElement("span");
+        span.innerHTML = "X";
+        span.setAttribute("onclick", "recordDelete('"+record.key+"')");
+        var p = document.createElement("p");
+        p.setAttribute("id", record.key);
+        p.innerHTML = "Name: " + record.val().name + "<br>Email: " + record.val().email;
+        p.appendChild(span);
+        document.getElementById("contact_list").appendChild(p);
     });
-    document.getElementById("contact_list").innerHTML = contacts;
+}
+
+function recordDelete(input) {
+    database.ref("contacts/").child(input).remove();
+    console.log(input);
+}
+
+function updateUpdate(){
+
 }

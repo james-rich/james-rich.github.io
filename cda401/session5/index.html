@@ -21,7 +21,7 @@
 
     </script>
 </head>
-<body onload="main()">
+<body onload="main(); updateUpdate()">
 <div class="left">
 <form action="#">
     <p><span>Name:</span><input type="text" id="name" required></p>
@@ -39,6 +39,7 @@
     <p><span>Post Code:</span><input type="text" id="post_code" required></p>
     <p id="post_code_label" class="hidden">Post Code field is required</p>
     <p><button onclick="validate_form()">Submit</button></p>
+
 </form>
 </div>
 <div class="right">
